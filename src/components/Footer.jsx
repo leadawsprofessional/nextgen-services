@@ -26,9 +26,8 @@ const Footer = () => {
       <div className="grid lg:grid-cols-2 border-b-4 w-full pb-6">
         <div className="flex flex-col py-5 space-y-2">
         <div className={" bg-[#B9FF66] p-px rounded-lg w-40 px-5"}>Contact Us : </div>
-        <div className="text-white">Email : </div>
-        <div className="text-white">Phone : </div>
-        <div className="text-white">Address : </div>
+        <div className="text-white">Email : info@targetgreencard.com</div>
+        <div className="text-white">Phone : +91 7995757248</div>
         </div>
         <div className="pt-6"></div>
       </div>

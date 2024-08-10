@@ -1,6 +1,5 @@
 import { goldman, spaceGrotesk } from "@/config/font";
 import React from "react";
-import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -16,12 +15,7 @@ const Footer = () => {
           <a href="/about-us" className="p-3">
             About Us
           </a>
-          <Link href="/#services" scroll={true} className="p-3">
-            Services
-          </Link>
-          <Link href="/#packages" scroll={true} className="p-3">
-            Packages
-          </Link>
+       
         </div>
       </div>
       <div className="grid lg:grid-cols-2 border-b-2 w-full pb-4 mt-4">

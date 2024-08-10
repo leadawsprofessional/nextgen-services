@@ -97,7 +97,7 @@ http://www.targetgreencard.com`;
                 </ul>
                 <p>In addition to these services, we also provide training to help enhance your profile and ensure you fully understand the EB1 process requirements.</p>
                 <p>Each service is priced individually, allowing you the flexibility to choose options that best meet your specific needs and budget. We are committed to providing you with personalized support to enhance your application's strength.</p>
-                <p>To make scheduling as convenient as possible, we have provided a Calendly link below where you can choose a time that best fits your schedule. Please note that there is a fee for this meeting.</p>
+                <p>To make scheduling as convenient as possible, we've provided a Calendly link below where you can select a time that best suits your availability. Please note that a nominal fee applies to this meeting, which will be credited towards any services you choose to proceed with.</p>
                 <p><a href="${message}" target="_blank">Schedule Your Meeting</a></p>
                 <p>Thank you for considering the <strong>EB1 Next Level Program</strong> as your partner in this important endeavor. I look forward to the opportunity to discuss how we can support your application further.</p>
                 <p>Warm regards,</p>

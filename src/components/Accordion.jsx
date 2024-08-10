@@ -3,17 +3,20 @@ import React, { useEffect, useRef } from "react";
 
 const Accordion = ({ question, answer, turn, setTurn, idx, faq }) => {
   const contentRef = useRef(null);
+  const zeroBasedIdx = idx - 1; // Convert id to zero-based index
 
   useEffect(() => {
     if (contentRef.current) {
-      contentRef.current.style.maxHeight = turn[idx]
+      contentRef.current.style.maxHeight = turn[zeroBasedIdx]
         ? `${contentRef.current.scrollHeight}px`
         : "0px";
     }
-  }, [contentRef, turn, idx]);
+  }, [contentRef, turn, zeroBasedIdx]);
 
   const toggleAccordion = () => {
-    let newTurn = turn.map((item, index) => (index === idx ? !item : false));
+    let newTurn = turn.map((item, index) =>
+      index === zeroBasedIdx ? !item : false
+    );
     setTurn(newTurn);
   };
 

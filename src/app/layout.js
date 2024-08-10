@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "NexGen Services",
+  title: "EB1 Next Level",
   description: "Unlock your American Dream",
 };
 

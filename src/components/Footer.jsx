@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
 
       <div className="pt-4 w-full text-center">
-        <span className="text-white">© 2023 Positivus. All Rights Reserved.</span>
+        <span className="text-white">© 2024 NEXGEN Services. All Rights Reserved.</span>
       </div>
     </div>
   );

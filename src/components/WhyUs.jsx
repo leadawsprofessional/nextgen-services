@@ -12,11 +12,11 @@ const WhyUs = () => {
             </div>
             <div className="flex flex-col lg:flex-row gap-4">
                 <div className="lg:w-1/5"><b>Proven Expertise :</b></div>
-                <div className="lg:w-4/5">Each client path to success is unique. We engage closely with you to tailor strategies that resonate with your professional achievements and aspirations. Our successful track record speaks volumes, with countless clients having achieved their dream of the EB1 green card. Our dedication and skill are reflected in our glowing testimonials.</div>
+                <div className="lg:w-4/5">Our successful track record speaks volumes, with countless clients having achieved their dream of the EB1 green card. Our dedication and skill are reflected in our glowing testimonials.</div>
             </div>
             <div className="flex flex-col lg:flex-row gap-4">
                 <div className="lg:w-1/5"><b>All-encompassing Support :</b></div>
-                <div className="lg:w-4/5">Each client path to success is unique. We engage closely with you to tailor strategies that resonate with your professional achievements and aspirations. We handle every detail meticulously, ensuring your journey toward permanent residency is seamless and stress-free.</div>
+                <div className="lg:w-4/5">We handle every detail meticulously, ensuring your journey toward permanent residency is seamless and stress-free.</div>
             </div>
         </div>
     </div>

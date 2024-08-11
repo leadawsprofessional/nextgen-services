@@ -46,7 +46,7 @@ const Form = (props) => {
       if (data.success) {
         // gtag('event', 'conversion', {'send_to': 'AW-10861096848/Og-TCLn93KgDEJDf_Loo'});
         toast.info(
-          "Thank you for contacting us. We will arrange a meeting shortly.",
+          "Your query has been submitted successfully, our team will reach out to you shortly.",
           {
             position: "top-right",
             autoClose: 5000,

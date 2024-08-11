@@ -1,16 +1,37 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
+
+const MONGODB_URI = process.env.MONGODB_URI;
 
 const connectToDb = async () => {
-  try {
-    await mongoose.connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    console.log('Connected to MongoDB!');
-  } catch (error) {
-    console.error('Error connecting to MongoDB:', error);
-    process.exit(1); // Exit the application on connection failure
-  }
+    const connectionState = mongoose.connection.readyState;
+
+    if(connectionState === 1)
+    {
+        console.log("Already connected!");
+        return;
+    }
+    if(connectionState === 2)
+    {
+        console.log("Connecting...");
+        return;
+    }
+
+    try{
+        await mongoose.connect(MONGODB_URI, {
+            dbName: "test",
+            bufferCommands: false
+        })
+        console.log("Connected!");
+    }
+    catch(error)
+    {
+        console.log("Error in connecting to database: ", error);
+        throw new Error("Error connecting to database");
+    }
+
+
+
 };
+
 
 export default connectToDb;

@@ -127,7 +127,6 @@ export async function POST(request) {
   const mailOptions = {
     from: process.env.EMAIL,
     to: email,
-    cc: 'info@targetgreencard.com', // Add CC address here
   };
   try {
     const newContact = new Contact(data);

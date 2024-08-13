@@ -31,3 +31,14 @@ body {
     text-wrap: balance;
   }
 }
+
+#services {
+  padding-top: 100px; /* Adjust this value based on your header height */
+  margin-top: -100px; /* Same value as padding-top to offset the space */
+}
+
+#packages {
+  padding-top: 100px; /* Adjust this value based on your header height */
+  margin-top: -100px; /* Same value as padding-top to offset the space */
+}
+

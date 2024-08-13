@@ -181,7 +181,7 @@ const data = [
           { title: "Profile Review" },
           { title: "Weekly Touch base Connect" },
           {
-            title: " Extended Help in Profile Improvement with",
+            title: "Help in Profile Improvement with",
             desc: [
               {
                 title: " Scholarly Papers",
@@ -200,7 +200,7 @@ const data = [
           { title: "Profile Review" },
           { title: "Weekly Touch base Connect" },
           {
-            title: " Extended Help in Profile Improvement with",
+            title: "Help in Profile Improvement with",
             desc: [
               { title: " Scholarly Papers" },
               { title: " Original Contributions" },
@@ -219,7 +219,7 @@ const data = [
           { title: "Profile Review" },
           { title: "Weekly Touch base Connect" },
           {
-            title: " Extended Help in Profile Improvement with",
+            title: "Help in Profile Improvement with",
             desc: [
               { title: " Scholarly Papers" },
               { title: " Original Contributions" },

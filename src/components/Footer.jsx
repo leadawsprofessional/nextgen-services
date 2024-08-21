@@ -57,7 +57,10 @@ const Footer = () => {
                 </div>
               ) : (
               // Any other page
-              <button onClick={handleHomeClick} className="p-3">
+              <button
+              onClick={handleHomeClick}
+              className="p-3 text-xl bg-[#363537] hover:bg-[#3a3838] transition-colors duration-300"
+            >
               Home
             </button>
         

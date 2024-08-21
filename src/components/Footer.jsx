@@ -57,11 +57,11 @@ const Footer = () => {
                 </div>
               ) : (
               // Any other page
-              <div className={spaceGrotesk.className + " pr-6 md:block hidden md:text-xl z-5"}>
-                <Link href="/" className="p-3 z-10">
+              <a href="/" className={spaceGrotesk.className + " pr-6 md:block hidden md:text-xl z-5"}>
+                <div className="p-3 z-10">
                   Home
-                </Link>
                 </div>
+                </a>
 
             )}
           {/* <a href="/about-us" className="p-3 hidden">

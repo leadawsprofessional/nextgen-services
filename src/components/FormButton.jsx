@@ -45,7 +45,7 @@ const FormButton = () => {
           data-aos="zoom-up"
         >
           <button
-            className="absolute right-2 -top-7 text-[#363537]"
+            className="absolute right-2 -top-7 text-[#363537] bg-white bg-opacity-40 rounded-lg"
             onClick={() => setVisible(false)}
           >
             <Close />

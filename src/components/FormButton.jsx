@@ -26,8 +26,7 @@ const FormButton = () => {
   return (
     <>
       <div
-        // data-aos="fade-left"
-        className="fixed w-16 rounded-full aspect-square bottom-16 flex justify-center items-center right-12 shadow-inner shadow-black z-10 cursor-pointer bg-[#77ad36] hover:animate-shake transition-transform duration-300"
+        className={`fixed rounded-full w-16 h-16 bottom-8 flex justify-center items-center right-4 shadow-inner shadow-black z-10 cursor-pointer bg-[#77ad36] hover:animate-shake transition-transform duration-300`}
       >
         <button className="" onClick={handleOpen}>
           <QuestionAnswerTwoTone
@@ -41,21 +40,23 @@ const FormButton = () => {
         </button>
       </div>
       {visible && (
-        <>
-          <div
-            className="hidden h-24 rounded-2xl text-sm w-64 px-2 py-5 fixed lg:flex flex-col justify-center items-center bottom-40 right-7 text-white bg-[#363537] "
-            data-aos="zoom-up"
+        <div
+          className={`fixed rounded-2xl text-base w-80 px-4 py-5 bottom-28 right-6 shadow-inner shadow-black text-white bg-[#363537] lg:flex hidden`}
+          data-aos="zoom-up"
+        >
+          <button
+            className="absolute right-2 -top-7 text-[#363537]"
+            onClick={() => setVisible(false)}
           >
-            <button className="fixed right-0 -top-7 text-[#363537]" onClick={()=>setVisible(false)}>
-              <Close />
-            </button>
-            <span className="text-center">
-              Need help on your permanent Residency! We are one click away.
-            </span>{" "}
-            <span className=" w-full text-right"> - Team EB1 Next Level</span>
-            <div className="fixed -bottom-2.5 right-9 rotate-45 w-5 aspect-square bg-[#363537] ease-in-out" />
+            <Close />
+          </button>
+          <div className="text-center">
+            <span className="text-justify">Need help on your permanent Residency!</span>
+            <span className="text-lg"> We are one click away.</span>
+            <span className="block mt-2 text-right">- Team EB1 Next Level</span>
           </div>
-        </>
+          <div className="absolute -bottom-2 right-4 rotate-45 w-5 aspect-square bg-[#363537] ease-in-out" />
+        </div>
       )}
 
       {open ? (

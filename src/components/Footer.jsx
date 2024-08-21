@@ -25,6 +25,10 @@ const Footer = () => {
     };
   }, []);
 
+  const handleHomeClick = () => {
+    window.location.href = '/';
+  };
+
   return (
     <div className="bg-[#363537] rounded-t-[4rem] p-8 flex flex-col justify-center items-center">
       <div
@@ -34,10 +38,6 @@ const Footer = () => {
         <a href="/" className={goldman.className + " lg:text-2xl ml-3"}>
           NEXGEN SERVICES
         </a>
-        {/* <div className={spaceGrotesk.className + " pr-6 md:block hidden md:text-xl"}>
-          <a href="/about-us" className="p-3">
-            About Us
-          </a> */}
           
           {currentRoute === '/' ? (
               // If Home Page
@@ -57,16 +57,12 @@ const Footer = () => {
                 </div>
               ) : (
               // Any other page
-              <a href="/" className={goldman.className + " lg:text-2xl ml-3"}>
-          Home
-        </a>
+              <button onClick={handleHomeClick} className="p-3">
+              Home
+            </button>
+        
 
             )}
-          {/* <a href="/about-us" className="p-3 hidden">
-            About Uw
-          </a>
-       
-        </div> */}
         
       </div>
       <div className="grid lg:grid-cols-2 border-b-2 w-full pb-4 mt-4">

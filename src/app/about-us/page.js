@@ -25,7 +25,7 @@ const Page = () => {
       <Touch />
       <WhyUs />
       {/* <Team /> */}
-      <Footer />
+      <Footer about={true}/>
       <FormButton />
       <Sidebar openNav={openNav} setOpenNav={setOpenNav} about={true}/>
     </>

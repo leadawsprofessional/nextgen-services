@@ -1,29 +1,12 @@
 import { goldman, spaceGrotesk } from "@/config/font";
 import React from "react";
 import { useEffect, useState } from 'react';
-import Router from 'next/router';
+// import Router from 'next/router';
 import Link from "next/link";
 
 
-const Footer = () => {
-  const [currentRoute, setCurrentRoute] = useState('');
-
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      setCurrentRoute(url); // Update the current route
-    };
-
-    // Set the initial route on mount
-    setCurrentRoute(window.location.pathname);
-
-    // Subscribe to route changes
-    Router.events.on('routeChangeComplete', handleRouteChange);
-
-    return () => {
-      // Clean up the event listener on unmount
-      Router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, []);
+const Footer = ({about}) => {
+  
 
   const handleHomeClick = () => {
     window.location.href = '/';
@@ -39,12 +22,12 @@ const Footer = () => {
           NEXGEN SERVICES
         </a>
           
-          {currentRoute === '/' ? (
+          {!about ? (
               // If Home Page
               <div className={spaceGrotesk.className + " pr-6 md:block hidden md:text-xl"}>
-                <a href="/about-us" className="p-3">
+                <Link href="/about-us" className="p-3">
                   About Us
-                </a>
+                </Link>
                 <Link href="/#services" className="p-3">
                   Services
                 </Link>
@@ -57,12 +40,11 @@ const Footer = () => {
                 </div>
               ) : (
               // Any other page
-              <button
-              onClick={handleHomeClick}
-              className="p-3 text-xl bg-[#363537] hover:bg-[#494747] hover:rounded-3xl transition-all duration-300"
-            >
-              Home
-            </button>
+              <div className={spaceGrotesk.className + " pr-6 md:block hidden md:text-xl"}>
+                <Link href="/" className="p-3">
+                  Home
+                </Link>
+                </div>
         
 
             )}

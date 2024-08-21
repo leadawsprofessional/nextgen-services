@@ -55,7 +55,7 @@ export default function Home() {
           <Slider />
           
           <FAQS />
-          <Footer />
+          <Footer about={false}/>
           <FormButton/>
           
           <Sidebar openNav={openNav} setOpenNav={setOpenNav} about={false}/>

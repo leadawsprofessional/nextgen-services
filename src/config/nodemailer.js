@@ -10,7 +10,7 @@ const toEmail = [
 
 
 export const transporter = nodemailer.createTransport({
-  host: 'mail.privateemail.com',   //'smtp.mail.yahoo.com',  // Yahoo SMTP host
+  host: 'smtp.gmail.com',   //'smtp.mail.yahoo.com',  // Yahoo SMTP host
   port: 465,                    // Port for SSL/TLS
   secure: true, // This ensures SSL is used
   auth: {

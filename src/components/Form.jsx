@@ -37,7 +37,7 @@ const Form = (props) => {
           email: values.email,
           phone: values.phone,
           message:
-            "https://calendly.com/buildeb1profile-ulry/upgrade-eb1-profile",
+            "https://calendly.com/buildeb1profile-ulry/initial-meet",
           query: values.query,
         },
         config

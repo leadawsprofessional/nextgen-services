@@ -125,7 +125,7 @@ export async function POST(request) {
   // console.log(data)
   const { name, email, phone } = data;
   const mailOptions = {
-    from: process.env.EMAIL,
+    from: `"EB1" <${process.env.EMAIL}>`,
     to: email,
   };
   try {
@@ -133,7 +133,7 @@ export async function POST(request) {
     await transporter.sendMail({
       ...mailOptions,
       ...generateEmailContent(data),
-      subject: "Enhance Your EB1A Application with Our Tailored Evidence-Creation Services",
+      subject: "Enhance Your EB1A Application with EB1 Next Level",
       // html:'<h1>hghgh</h1><p></p>'
     });
     await newContact.save();

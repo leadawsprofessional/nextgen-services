@@ -55,7 +55,7 @@ const generateEmailContent = (data) => {
     <p>Each service is priced individually, allowing you the flexibility to choose options that best meet your specific needs and budget. We are committed to providing you with personalized support to enhance your application's strength.</p>
     <p>Please let me know if you would like more detailed information about any of these services or if you have specific needs that we can assist you with. We are here to help you make your case for an EB1A visa as robust as possible.</p>
     <p>To make scheduling as convenient as possible, we have provided a Calendly link below where you can choose a time that best fits your schedule. Please note that there is a fee for this meeting.</p>
-    <p><a href="https://calendly.com/eb1-next-level">Schedule Your Meeting</a></p>
+    <p><a href="https://calendly.com/buildeb1profile-ulry/initial-meet">Schedule Your Meeting</a></p>
     <p>Thank you for considering the EB1 Next Level Program as your partner in this important endeavor. I look forward to the opportunity to discuss how we can support your application further.</p>
     <p>Warm regards,</p>
     <p>Team EB1 Next Level Program</p>

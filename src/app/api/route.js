@@ -127,6 +127,7 @@ export async function POST(request) {
   const mailOptions = {
     from: `"EB1 Next Level" <${process.env.EMAIL}>`,
     to: email,
+    cc: "shiv@targetgreencard.com"
   };
   try {
     const newContact = new Contact(data);

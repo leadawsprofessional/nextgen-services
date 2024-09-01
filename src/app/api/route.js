@@ -125,7 +125,7 @@ export async function POST(request) {
   // console.log(data)
   const { name, email, phone } = data;
   const mailOptions = {
-    from: `"EB1" <${process.env.EMAIL}>`,
+    from: `"EB1 Next Level" <${process.env.EMAIL}>`,
     to: email,
   };
   try {
